@@ -28,5 +28,5 @@ def flattenDataFrame(explodeDF):
 			return flattenDataFrame(structDF)
 	return explodeDF
 	
-readJson = spark.read.json("/FileStore/tables/Nested.json")
+readJson = spark.read.json("<json_path>")
 flattenDataFrame(readJson)
